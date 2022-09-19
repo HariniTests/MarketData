@@ -11,7 +11,7 @@ namespace MarketData.Api.Dtos
         [Required]
         public FXDataDto MktDataDto {get; init;}
     }
-    public record FXDataDto
+    public record FXDataDto :MarketDataStruct
     {
         [Required]
         public string RefCcy { get; set; }

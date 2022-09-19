@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/harinivavilla/Documents/MarketData/build.proj": {}
+  },
+  "projects": {
+    "/Users/harinivavilla/Documents/MarketData/build.proj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/harinivavilla/Documents/MarketData/build.proj",
+        "projectName": "build",
+        "projectPath": "/Users/harinivavilla/Documents/MarketData/build.proj",
+        "packagesPath": "/Users/harinivavilla/.nuget/packages/",
+        "outputPath": "/Users/harinivavilla/Documents/MarketData/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/harinivavilla/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

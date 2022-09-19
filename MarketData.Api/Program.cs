@@ -1,8 +1,10 @@
 using MarketData.Api.Repository;
+using MarketData.Api.Validations;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<IntRepository, InMemoryRepository>();
+builder.Services.AddSingleton<IValidationService, ValidationService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

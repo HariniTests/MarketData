@@ -10,14 +10,19 @@ namespace MarketData.Api.Entities{
 
         public RecMarketData(string mktdatatype, DateTimeOffset refdate, FXData mktdata)
         {
-            Id = mktdatatype+"-"+ refdate.ToString("yyyymmdd")+ "-"+ mktdata.RefCcy;  //create a unique id as combination of type (EX: FX), date and Ref CCy
-            MktDataType= mktdatatype;
-            MktData = mktdata;
-            RefDate= refdate;
+            if(mktdatatype=="FX")
+            {
+                FXData fxMktData =(FXData) mktdata;
+                Id = mktdatatype+"-"+ refdate.ToString("yyyymmdd")+ "-"+ fxMktData.RefCcy;  //create a unique id as combination of type (EX: FX), date and Ref CCy
+                MktDataType= mktdatatype;
+                MktData = mktdata;
+                RefDate= refdate;
+
+            }
 
         }
     }
-    public class FXData {
+    public class FXData :MarketDataStruct {
         
         public string RefCcy { get; set; }
         public double BidPrice { get; set; }

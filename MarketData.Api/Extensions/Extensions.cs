@@ -1,7 +1,7 @@
 using MarketData.Api.Entities;
 using MarketData.Api.Dtos;
 
-namespace MarketData.Api {
+namespace MarketData.Api.Extensions {
     public static class Extensions {
         public static MktDataDto AsDto(this RecMarketData origstruct)
         {
