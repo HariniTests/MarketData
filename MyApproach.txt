@@ -1,0 +1,26 @@
+Data Structures: 
+Structure of MarketData is 
+Unique ID is a concatenation of MarketDatatype+ "-"+ Date of fixings (in yyyymmdd) + "-" + RefCCy
+MarketData Type
+Date 
+MarketData -Ideally this should be implemented using an interface (MarketDatAStruct) so it can be more generic
+
+MarketData in the scenario used - FXMarketData
+This consists of RefCCy (Assuming that all FX prices are basd on Eur Denomination, so not having BaseCCy)
+Bid Price
+Ask Price
+
+
+API Methods:
+GetAllITems - All marketdata items in repository 
+GetItembyID  - Retrieve the fixings by the unique Id. 
+CreateFXData - This is for marketdata submission. Basic Validation is done by data annotations. 
+ValidationService - For the purpose of this test, doing one validation (askprice>=bid price)
+
+For the purpose of this test , tried to use the InMemory Repository  as a database. This can be easliy switched to a database repository as it is implemented via interfaces.
+
+ValidationService - for now using a basic validation check (askprice >= bid price)
+
+For Unit Tests, used xUnit. Moq is to mockup the services needed. 
+
+
