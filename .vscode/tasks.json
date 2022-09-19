@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MarketData.csproj",
+                "${workspaceFolder}/MarketData.Api/MarketData.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MarketData.csproj",
+                "${workspaceFolder}/MarketData.Api/MarketData.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/MarketData.csproj"
+                "${workspaceFolder}/MarketData.Api/MarketData.Api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
